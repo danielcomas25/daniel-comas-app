@@ -6,12 +6,14 @@ import Header from './components/Header';
 import Resume from './components/Resume';
 import Academic from './components/Academic';
 import Professional from './components/Professional';
+import AboutMe from './components/AboutMe';
 
 function App() {
   return (
     <div className="App">
       <Header/>
       <Resume/>
+      <AboutMe/>
       <Professional/>
       <Academic/>
     </div>
