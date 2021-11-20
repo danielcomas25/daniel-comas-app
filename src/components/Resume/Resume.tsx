@@ -29,7 +29,7 @@ const Resume = () => {
               flexDirection: "column",
             }}
           >
-            <code className="App-resume-title">Hi, my name is Daniel </code>
+            <code className="App-resume-title">Hi, my name is Daniel</code>
             <br />
             <code className="App-resume-content">
               {" "}
