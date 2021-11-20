@@ -12,10 +12,18 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Resume />
-      <AboutMe />
-      <Professional />
-      <Academic />
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+        }}
+      >
+        <Resume />
+        <AboutMe />
+        <Professional />
+        <Academic />
+      </div>
     </div>
   );
 }

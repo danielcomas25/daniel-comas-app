@@ -1,30 +1,20 @@
+import { Icon } from "@iconify/react";
 import React from "react";
 
 const AboutMe = () => {
   return (
-    <>
-      <div
-        className={"App-academic-title"}
-        style={{
-          fontSize: "4vh",
-          fontWeight: "bolder",
-          marginLeft: "27vh",
-          display: "flex",
-          justifyContent: "left",
-        }}
-      >
-        {" "}
+    <div
+      style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+    >
+      <h2 style={{ display: "flex", textAlign: "start" }}>
         <code> About me </code>
-      </div>
-      <br />
+      </h2>
       <code
         style={{
-          marginRight: "1vh",
           maxWidth: "120vh",
           display: "flex",
           textAlign: "start",
           flexDirection: "column",
-          marginLeft: "27vh",
           fontSize: "2vh",
         }}
       >
@@ -36,11 +26,92 @@ const AboutMe = () => {
         Afterwards, I decided to do my master in Computer Science in Telecom
         SudParis where I learn many things about development and software
         architectures. Then I decided to start my professional career in Adomik
-        as a backend software engineer in the Data Processing and Storage team.
+        as a backend software engineer in the Data Processing and Storage team.{" "}
+        <br /> <br />
+        Here are some technologies I have been working with in the last few
+        years:
+        <br />
       </code>
+      <div
+        style={{ display: "flex", flexDirection: "row", alignItems: "center" }}
+      >
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            margin: "2vh",
+          }}
+        >
+          <Icon icon="mdi:language-ruby-on-rails" width="70" />
+          <code style={{ fontSize: "1.5vh" }}> Ruby on Rails </code>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            margin: "2vh",
+          }}
+        >
+          <Icon icon="logos:scala" width="40" />
+          <code style={{ fontSize: "1.5vh", marginTop: "1vh" }}> Scala </code>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            margin: "2vh",
+          }}
+        >
+          <Icon icon="cib:apache-spark" color="#ff6600" width="65" />
+          <code style={{ fontSize: "1.5vh", marginTop: "1vh" }}> Spark </code>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            margin: "2vh",
+          }}
+        >
+          <Icon icon="fontisto:aws" color="#ffff" width="65" />
+          <code style={{ fontSize: "1.5vh", marginTop: "1vh" }}> AWS </code>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            margin: "2vh",
+          }}
+        >
+          <Icon
+            icon="vscode-icons:file-type-mongo"
+            color="#ff0010"
+            width="65"
+          />
+          <code style={{ fontSize: "1.5vh", marginTop: "1vh" }}> MongoDB </code>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            margin: "2vh",
+          }}
+        >
+          <Icon icon="logos:postgresql" color="#ff0010" width="60" />
+          <code style={{ fontSize: "1.5vh", marginTop: "1vh" }}>
+            {" "}
+            PostgreSQL{" "}
+          </code>
+        </div>
+      </div>
       <br />
       <br />
-    </>
+    </div>
   );
 };
 export default AboutMe;
