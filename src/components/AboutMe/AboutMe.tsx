@@ -6,7 +6,7 @@ const AboutMe = () => {
     <div
       style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
     >
-      <h2 style={{ display: "flex", textAlign: "start" }}>
+      <h2 style={{ display: "flex", flexDirection: 'column', textAlign: 'start'}}>
         <code> About me </code>
       </h2>
       <code
