@@ -9,6 +9,7 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  margin-left: 6vh;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -20,8 +21,8 @@
 }
 
 .Academic-logo {
-  max-width: 7.5vh;
-  height: auto;
+  width: 7.5vh;
+  height: 6vh;
   margin-right: 2vh;
 }
 
@@ -31,6 +32,8 @@
   display: flex;
   flex-direction: column;
   color: white;
+  position: fixed;
+  width: 100%
 }
 
 .App-link {
@@ -51,4 +54,34 @@
   display: 'flex';
   flex-direction: row;
   justify-content: '';
+}
+
+.App-resume-title {
+ font-size: 4vh;
+ font-weight: bold;
+ overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+.App-resume-content {
+  font-size: 2vh;
+  font-weight: bold;
+ }
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(247, 245, 241); }
 }
