@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/daniel-comas-app/static/css/main.fa258bea.chunk.css",
-    "main.js": "/daniel-comas-app/static/js/main.f0bdbbbc.chunk.js",
-    "main.js.map": "/daniel-comas-app/static/js/main.f0bdbbbc.chunk.js.map",
+    "main.js": "/daniel-comas-app/static/js/main.c90811b0.chunk.js",
+    "main.js.map": "/daniel-comas-app/static/js/main.c90811b0.chunk.js.map",
     "runtime-main.js": "/daniel-comas-app/static/js/runtime-main.58212820.js",
     "runtime-main.js.map": "/daniel-comas-app/static/js/runtime-main.58212820.js.map",
-    "static/js/2.9cec59e5.chunk.js": "/daniel-comas-app/static/js/2.9cec59e5.chunk.js",
-    "static/js/2.9cec59e5.chunk.js.map": "/daniel-comas-app/static/js/2.9cec59e5.chunk.js.map",
+    "static/js/2.b6f5782b.chunk.js": "/daniel-comas-app/static/js/2.b6f5782b.chunk.js",
+    "static/js/2.b6f5782b.chunk.js.map": "/daniel-comas-app/static/js/2.b6f5782b.chunk.js.map",
     "static/js/3.297def45.chunk.js": "/daniel-comas-app/static/js/3.297def45.chunk.js",
     "static/js/3.297def45.chunk.js.map": "/daniel-comas-app/static/js/3.297def45.chunk.js.map",
     "index.html": "/daniel-comas-app/index.html",
     "static/css/main.fa258bea.chunk.css.map": "/daniel-comas-app/static/css/main.fa258bea.chunk.css.map",
-    "static/js/2.9cec59e5.chunk.js.LICENSE.txt": "/daniel-comas-app/static/js/2.9cec59e5.chunk.js.LICENSE.txt"
+    "static/js/2.b6f5782b.chunk.js.LICENSE.txt": "/daniel-comas-app/static/js/2.b6f5782b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.58212820.js",
-    "static/js/2.9cec59e5.chunk.js",
+    "static/js/2.b6f5782b.chunk.js",
     "static/css/main.fa258bea.chunk.css",
-    "static/js/main.f0bdbbbc.chunk.js"
+    "static/js/main.c90811b0.chunk.js"
   ]
 }
