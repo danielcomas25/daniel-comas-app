@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.52c59465.chunk.css",
-    "main.js": "/static/js/main.22a17f40.chunk.js",
-    "main.js.map": "/static/js/main.22a17f40.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.2d6eae2c.js",
-    "runtime-main.js.map": "/static/js/runtime-main.2d6eae2c.js.map",
-    "static/js/2.2142afce.chunk.js": "/static/js/2.2142afce.chunk.js",
-    "static/js/2.2142afce.chunk.js.map": "/static/js/2.2142afce.chunk.js.map",
-    "static/js/3.638f11a5.chunk.js": "/static/js/3.638f11a5.chunk.js",
-    "static/js/3.638f11a5.chunk.js.map": "/static/js/3.638f11a5.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.52c59465.chunk.css.map": "/static/css/main.52c59465.chunk.css.map",
-    "static/js/2.2142afce.chunk.js.LICENSE.txt": "/static/js/2.2142afce.chunk.js.LICENSE.txt",
-    "static/media/tsp-logo.fd652d08.jpeg": "/static/media/tsp-logo.fd652d08.jpeg"
+    "main.css": "/daniel-comas-app/static/css/main.52c59465.chunk.css",
+    "main.js": "/daniel-comas-app/static/js/main.22a17f40.chunk.js",
+    "main.js.map": "/daniel-comas-app/static/js/main.22a17f40.chunk.js.map",
+    "runtime-main.js": "/daniel-comas-app/static/js/runtime-main.344e4e8b.js",
+    "runtime-main.js.map": "/daniel-comas-app/static/js/runtime-main.344e4e8b.js.map",
+    "static/js/2.2142afce.chunk.js": "/daniel-comas-app/static/js/2.2142afce.chunk.js",
+    "static/js/2.2142afce.chunk.js.map": "/daniel-comas-app/static/js/2.2142afce.chunk.js.map",
+    "static/js/3.638f11a5.chunk.js": "/daniel-comas-app/static/js/3.638f11a5.chunk.js",
+    "static/js/3.638f11a5.chunk.js.map": "/daniel-comas-app/static/js/3.638f11a5.chunk.js.map",
+    "index.html": "/daniel-comas-app/index.html",
+    "static/css/main.52c59465.chunk.css.map": "/daniel-comas-app/static/css/main.52c59465.chunk.css.map",
+    "static/js/2.2142afce.chunk.js.LICENSE.txt": "/daniel-comas-app/static/js/2.2142afce.chunk.js.LICENSE.txt",
+    "static/media/tsp-logo.fd652d08.jpeg": "/daniel-comas-app/static/media/tsp-logo.fd652d08.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.2d6eae2c.js",
+    "static/js/runtime-main.344e4e8b.js",
     "static/js/2.2142afce.chunk.js",
     "static/css/main.52c59465.chunk.css",
     "static/js/main.22a17f40.chunk.js"
