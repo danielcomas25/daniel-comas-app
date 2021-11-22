@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { send } from "emailjs-com";
 import { Icon } from "@iconify/react";
+import logo from "./../../logo.svg";
 
 const ContactMe = () => {
   const [iconOn, setIconOn] = useState({ on: "none" });
@@ -106,18 +107,29 @@ const ContactMe = () => {
             style={{
               height: "5vh",
               fontSize: "3vh",
+              fontWeight: "bolder",
               fontFamily: "Raleway,sans-serif",
             }}
           >
             {" "}
-            Submit
+            Send
           </button>
         </form>
       </div>
       <div style={{ marginLeft: "10vh" }}>
         <h3>
           {" "}
-          <code>Made with React by Daniel</code>{" "}
+          <code>
+            Made with
+            <a
+              href="https://reactjs.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={logo} alt="logo" className="React-logo" />
+            </a>
+            by Daniel
+          </code>{" "}
         </h3>
         <div>
           <span style={{ marginRight: "3vh" }}>

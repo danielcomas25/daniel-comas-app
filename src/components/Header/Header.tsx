@@ -5,46 +5,82 @@ const Header = () => {
   return (
     <div className="App-header">
       <div
-        style={{ display: "flex", justifyContent: "flex-end", margin: "0.5vh" }}
+        style={{ display: "flex", justifyContent: "flex-end", margin: "2vh" }}
       >
         <div
-          style={{ marginRight: "2vh", fontSize: "2vh", fontWeight: "bold" }}
+          style={{
+            marginRight: "4vh",
+            fontSize: "2.5vh",
+            fontWeight: "bolder",
+          }}
         >
-          <HashLink smooth to="/daniel-comas-app#home">
-            {" "}
-            <code> Home </code>
+          <HashLink
+            smooth
+            to="/daniel-comas-app#home"
+            style={{ textDecoration: "none", color: "black" }}
+          >
+            Home
           </HashLink>
         </div>
         <div
-          style={{ marginRight: "2vh", fontSize: "2vh", fontWeight: "bold" }}
+          style={{
+            marginRight: "4vh",
+            fontSize: "2.5vh",
+            fontWeight: "bolder",
+          }}
         >
-          <HashLink smooth to="/daniel-comas-app#aboutme">
+          <HashLink
+            smooth
+            to="/daniel-comas-app#aboutme"
+            style={{ textDecoration: "none", color: "black" }}
+          >
             {" "}
-            <code> About me </code>
+            About me
           </HashLink>
         </div>
         <div
-          style={{ marginRight: "2vh", fontSize: "2vh", fontWeight: "bold" }}
+          style={{
+            marginRight: "4vh",
+            fontSize: "2.5vh",
+            fontWeight: "bolder",
+          }}
         >
-          <HashLink smooth to="/daniel-comas-app#experience">
-            {" "}
-            <code> Experience </code>
+          <HashLink
+            smooth
+            to="/daniel-comas-app#experience"
+            style={{ textDecoration: "none", color: "black" }}
+          >
+            Experience
           </HashLink>
         </div>
         <div
-          style={{ marginRight: "2vh", fontSize: "2vh", fontWeight: "bold" }}
+          style={{
+            marginRight: "4vh",
+            fontSize: "2.5vh",
+            fontWeight: "bolder",
+          }}
         >
-          <HashLink smooth to="/daniel-comas-app#academic">
-            {" "}
-            <code> Formation </code>
+          <HashLink
+            smooth
+            to="/daniel-comas-app#academic"
+            style={{ textDecoration: "none", color: "black" }}
+          >
+            Formation
           </HashLink>
         </div>
         <div
-          style={{ marginRight: "2vh", fontSize: "2vh", fontWeight: "bold" }}
+          style={{
+            marginRight: "4vh",
+            fontSize: "2.5vh",
+            fontWeight: "bolder",
+          }}
         >
-          <HashLink smooth to="/daniel-comas-app#contactme">
-            {" "}
-            <code> Contact me </code>
+          <HashLink
+            smooth
+            to="/daniel-comas-app#contactme"
+            style={{ textDecoration: "none", color: "black" }}
+          >
+            Contact me
           </HashLink>
         </div>
       </div>

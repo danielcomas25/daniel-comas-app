@@ -11,6 +11,7 @@ const AboutMe = () => {
         height: "100vh",
         alignContent: "center",
         justifyContent: "center",
+        margin: "1vh",
       }}
       id="aboutme"
     >
@@ -55,7 +56,13 @@ const AboutMe = () => {
             margin: "2vh",
           }}
         >
-          <Icon icon="mdi:language-ruby-on-rails" width="70" />
+          <a
+            href="https://rubyonrails.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icon icon="mdi:language-ruby-on-rails" width="70" />
+          </a>
           <code style={{ fontSize: "1.5vh" }}> Ruby on Rails </code>
         </div>
         <div
@@ -66,7 +73,13 @@ const AboutMe = () => {
             margin: "2vh",
           }}
         >
-          <Icon icon="logos:scala" width="40" />
+          <a
+            href="https://www.scala-lang.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icon icon="logos:scala" width="40" />
+          </a>
           <code style={{ fontSize: "1.5vh", marginTop: "1vh" }}> Scala </code>
         </div>
         <div
@@ -77,7 +90,13 @@ const AboutMe = () => {
             margin: "2vh",
           }}
         >
-          <Icon icon="cib:apache-spark" color="#ff6600" width="65" />
+          <a
+            href="https://spark.apache.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icon icon="cib:apache-spark" color="#ff6600" width="65" />
+          </a>
           <code style={{ fontSize: "1.5vh", marginTop: "1vh" }}> Spark </code>
         </div>
         <div
@@ -88,7 +107,13 @@ const AboutMe = () => {
             margin: "2vh",
           }}
         >
-          <Icon icon="fontisto:aws" color="#ffff" width="65" />
+          <a
+            href={"https://aws.amazon.com/"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icon icon="fontisto:aws" color="#ffff" width="65" />
+          </a>
           <code style={{ fontSize: "1.5vh", marginTop: "1vh" }}> AWS </code>
         </div>
         <div
@@ -99,11 +124,17 @@ const AboutMe = () => {
             margin: "2vh",
           }}
         >
-          <Icon
-            icon="vscode-icons:file-type-mongo"
-            color="#ff0010"
-            width="65"
-          />
+          <a
+            href="https://www.mongodb.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icon
+              icon="vscode-icons:file-type-mongo"
+              color="#ff0010"
+              width="65"
+            />
+          </a>
           <code style={{ fontSize: "1.5vh", marginTop: "1vh" }}> MongoDB </code>
         </div>
         <div
@@ -114,10 +145,15 @@ const AboutMe = () => {
             margin: "2vh",
           }}
         >
-          <Icon icon="logos:postgresql" color="#ff0010" width="60" />
+          <a
+            href="https://www.postgresql.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icon icon="logos:postgresql" color="#ff0010" width="60" />
+          </a>
           <code style={{ fontSize: "1.5vh", marginTop: "1vh" }}>
-            {" "}
-            PostgreSQL{" "}
+            PostgreSQL
           </code>
         </div>
       </div>
