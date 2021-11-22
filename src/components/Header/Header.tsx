@@ -10,7 +10,7 @@ const Header = () => {
         <div
           style={{ marginRight: "2vh", fontSize: "2vh", fontWeight: "bold" }}
         >
-          <HashLink smooth to="/#home">
+          <HashLink smooth to="/daniel-comas-app#home">
             {" "}
             <code> Home </code>
           </HashLink>
@@ -18,7 +18,7 @@ const Header = () => {
         <div
           style={{ marginRight: "2vh", fontSize: "2vh", fontWeight: "bold" }}
         >
-          <HashLink smooth to="/#aboutme">
+          <HashLink smooth to="/daniel-comas-app#aboutme">
             {" "}
             <code> About me </code>
           </HashLink>
@@ -26,7 +26,7 @@ const Header = () => {
         <div
           style={{ marginRight: "2vh", fontSize: "2vh", fontWeight: "bold" }}
         >
-          <HashLink smooth to="/#experience">
+          <HashLink smooth to="/daniel-comas-app#experience">
             {" "}
             <code> Experience </code>
           </HashLink>
@@ -34,7 +34,7 @@ const Header = () => {
         <div
           style={{ marginRight: "2vh", fontSize: "2vh", fontWeight: "bold" }}
         >
-          <HashLink smooth to="/#academic">
+          <HashLink smooth to="/daniel-comas-app#academic">
             {" "}
             <code> Formation </code>
           </HashLink>

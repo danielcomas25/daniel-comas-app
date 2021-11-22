@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/" element={<MainPage />}></Route>
+          <Route path="/daniel-comas-app" element={<MainPage />}></Route>
         </Routes>
       </Router>
     </div>
