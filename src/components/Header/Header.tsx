@@ -83,6 +83,22 @@ const Header = () => {
             Contact me
           </HashLink>
         </div>
+        <div
+          style={{
+            marginRight: "4vh",
+            fontSize: "2.5vh",
+            fontWeight: "bolder",
+          }}
+        >
+          <a
+            href="https://drive.google.com/file/d/1T0ik5L-cFLNouviBgMJoQ6ZjEuvg8MQk/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none", color: "black" }}
+          >
+            Get my CV
+          </a>
+        </div>
       </div>
     </div>
   );
