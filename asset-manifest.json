@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/daniel-comas-app/static/css/main.aaf24f69.chunk.css",
-    "main.js": "/daniel-comas-app/static/js/main.2415e8f2.chunk.js",
-    "main.js.map": "/daniel-comas-app/static/js/main.2415e8f2.chunk.js.map",
+    "main.js": "/daniel-comas-app/static/js/main.9a7a9c2b.chunk.js",
+    "main.js.map": "/daniel-comas-app/static/js/main.9a7a9c2b.chunk.js.map",
     "runtime-main.js": "/daniel-comas-app/static/js/runtime-main.14ff6b77.js",
     "runtime-main.js.map": "/daniel-comas-app/static/js/runtime-main.14ff6b77.js.map",
     "static/js/2.059fab24.chunk.js": "/daniel-comas-app/static/js/2.059fab24.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.14ff6b77.js",
     "static/js/2.059fab24.chunk.js",
     "static/css/main.aaf24f69.chunk.css",
-    "static/js/main.2415e8f2.chunk.js"
+    "static/js/main.9a7a9c2b.chunk.js"
   ]
 }
