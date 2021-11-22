@@ -1,30 +1,50 @@
 import React, { useState } from "react";
+import { HashLink } from "react-router-hash-link";
 
 const Header = () => {
   return (
     <div className="App-header">
-      <br />
-      <div style={{ display: "flex", justifyContent: "flex-end" }}>
+      <div
+        style={{ display: "flex", justifyContent: "flex-end", margin: "0.5vh" }}
+      >
         <div
           style={{ marginRight: "2vh", fontSize: "2vh", fontWeight: "bold" }}
         >
-          {" "}
-          <code> About me </code>{" "}
+          <HashLink smooth to="/#home">
+            {" "}
+            <code> Home </code>
+          </HashLink>
         </div>
         <div
           style={{ marginRight: "2vh", fontSize: "2vh", fontWeight: "bold" }}
         >
-          {" "}
-          <code> Experience </code>{" "}
+          <HashLink smooth to="/#aboutme">
+            {" "}
+            <code> About me </code>
+          </HashLink>
         </div>
         <div
           style={{ marginRight: "2vh", fontSize: "2vh", fontWeight: "bold" }}
         >
-          {" "}
-          <code> Formation </code>{" "}
+          <HashLink smooth to="/#experience">
+            {" "}
+            <code> Experience </code>
+          </HashLink>
+        </div>
+        <div
+          style={{ marginRight: "2vh", fontSize: "2vh", fontWeight: "bold" }}
+        >
+          <HashLink smooth to="/#academic">
+            {" "}
+            <code> Formation </code>
+          </HashLink>
+        </div>
+        <div
+          style={{ marginRight: "2vh", fontSize: "2vh", fontWeight: "bold" }}
+        >
+          <code> Contact me </code>
         </div>
       </div>
-      <br />
     </div>
   );
 };

@@ -7,17 +7,12 @@ const Resume = () => {
   const [iconOn, setIconOn] = useState({ on: "none" });
   return (
     <>
-      <br />
-      <br />
-      <div className="App-resume">
-        <br />
-        <br />
+      <div className="App-resume" id="home">
         <div
           style={{
             display: "flex",
             flexDirection: "row",
             justifyContent: "center",
-            marginRight: "2vh",
           }}
         >
           <p
@@ -32,7 +27,6 @@ const Resume = () => {
             <code className="App-resume-title">Hi, my name is Daniel</code>
             <br />
             <code className="App-resume-content">
-              {" "}
               I am a software engineer specialized in backend development.
               Currently, my main interests are data pipeline design and
               distributed systems.
@@ -46,40 +40,42 @@ const Resume = () => {
             alt="logo"
           />
         </div>
-        <span style={{ marginRight: "3vh" }}>
-          <a
-            className="App-link"
-            href="https://www.linkedin.com/in/daniel-comas-aa9a5896/"
-            target="_blank"
-            rel="noopener noreferrer"
-            onMouseOver={() => setIconOn({ on: "linkedin" })}
-            onMouseLeave={() => setIconOn({ on: "none" })}
-          >
-            <Icon
-              icon="uil:linkedin"
-              width="50"
-              height="50"
-              color={iconOn.on === "linkedin" ? "#c2c2d6" : "#ffff"}
-            />
-          </a>
-        </span>
-        <span>
-          <a
-            className="App-link"
-            href="https://github.com/danielcomas25"
-            target="_blank"
-            rel="noopener noreferrer"
-            onMouseOver={() => setIconOn({ on: "github" })}
-            onMouseLeave={() => setIconOn({ on: "none" })}
-          >
-            <Icon
-              icon="akar-icons:github-fill"
-              width="50"
-              height="50"
-              color={iconOn.on === "github" ? "#c2c2d6" : "#ffff"}
-            />
-          </a>
-        </span>
+        <div>
+          <span style={{ marginRight: "3vh" }}>
+            <a
+              className="App-link"
+              href="https://www.linkedin.com/in/daniel-comas-aa9a5896/"
+              target="_blank"
+              rel="noopener noreferrer"
+              onMouseOver={() => setIconOn({ on: "linkedin" })}
+              onMouseLeave={() => setIconOn({ on: "none" })}
+            >
+              <Icon
+                icon="uil:linkedin"
+                width="75"
+                height="75"
+                color={iconOn.on === "linkedin" ? "#c2c2d6" : "#ffff"}
+              />
+            </a>
+          </span>
+          <span>
+            <a
+              className="App-link"
+              href="https://github.com/danielcomas25"
+              target="_blank"
+              rel="noopener noreferrer"
+              onMouseOver={() => setIconOn({ on: "github" })}
+              onMouseLeave={() => setIconOn({ on: "none" })}
+            >
+              <Icon
+                icon="akar-icons:github-fill"
+                width="75"
+                height="75"
+                color={iconOn.on === "github" ? "#c2c2d6" : "#ffff"}
+              />
+            </a>
+          </span>
+        </div>
       </div>
     </>
   );

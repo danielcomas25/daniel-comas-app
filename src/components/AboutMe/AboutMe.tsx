@@ -4,9 +4,19 @@ import React from "react";
 const AboutMe = () => {
   return (
     <div
-      style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        height: "100vh",
+        alignContent: "center",
+        justifyContent: "center",
+      }}
+      id="aboutme"
     >
-      <h2 style={{ display: "flex", flexDirection: 'column', textAlign: 'start'}}>
+      <h2
+        style={{ display: "flex", flexDirection: "column", textAlign: "start" }}
+      >
         <code> About me </code>
       </h2>
       <code
@@ -16,6 +26,8 @@ const AboutMe = () => {
           textAlign: "start",
           flexDirection: "column",
           fontSize: "2vh",
+          marginLeft: "10vh",
+          marginRight: "10vh",
         }}
       >
         {" "}

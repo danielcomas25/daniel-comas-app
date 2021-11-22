@@ -16,15 +16,20 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    max-width: 15%;
-    height: 15%;
-    /* animation: App-logo-spin infinite 20s linear; */
+    max-width: 70%;
+    max-height: 70%;
   }
 }
 
-.Academic-logo {
+.Academic-logo-tsp {
   width: 7.5vh;
-  height: 6vh;
+  height: 7.5vh;
+  margin-right: 2vh;
+}
+
+.Academic-logo-usb {
+  width: 7.5vh;
+  height: 5.5vh;
   margin-right: 2vh;
 }
 
@@ -53,9 +58,12 @@
 }
 
 .App-resume {
-  display: 'flex';
-  flex-direction: row;
-  justify-content: '';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  align-content: center;
 }
 
 .App-resume-title {

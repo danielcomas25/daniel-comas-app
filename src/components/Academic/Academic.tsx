@@ -1,83 +1,37 @@
 import React, { useState } from "react";
 
 import { Link } from "react-router-dom";
+import usbLogo from "./../../images/usb-logo.gif";
+import tspLogo from "./../../images/tsp-logo.jpeg";
 
 interface Selector {
   selector: String;
 }
 
 const Academic = () => {
-  const [academicData, setAcademicData] = useState<Selector>({
-    selector: "master",
-  });
-
   return (
-    <>
-      <br />
-      <br />
+    <div
+      id={"academic"}
+      style={{
+        height: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        alignContent: "center",
+      }}
+    >
       <div
         className={"App-academic-title"}
         style={{
           fontSize: "4vh",
           fontWeight: "bolder",
-          display: "flex",
-          justifyContent: "left",
-          marginLeft: "27vh",
         }}
       >
-        {" "}
         <code> Academic Formation </code>
       </div>
       <br />
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "center",
-        }}
-      >
-        <img
-          src={
-            academicData.selector === "master"
-              ? "https://yt3.ggpht.com/ytc/AKedOLSMEoFIUvq8u7RnjnwtbMb2JLOiV1CXkYAKLABE=s900-c-k-c0x00ffffff-no-rj"
-              : "https://lh3.googleusercontent.com/proxy/SigmqJCWz3ma6f6tTxXsMAY9fYToUjMOegNHpHnScYtaE5LuUpbvluvcdim1mMqX_xLiWvJomZoPK07sdrbQWWCqjIiAw35glBiqXOn6-OQZoSmBvR1xN7t990NjxJkqusSFS1dE"
-          }
-          className="Academic-logo"
-          alt="logo"
-        />
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            textAlign: "start",
-            fontSize: "2vh",
-            fontWeight: "bold",
-            height: "6vh",
-            justifyContent: "space-between",
-            marginRight: "3vh",
-            width: "7vh",
-            marginLeft: "1vh",
-          }}
-        >
-          <div
-            onMouseEnter={() => setAcademicData({ selector: "master" })}
-            style={{
-              fontWeight:
-                academicData.selector === "master" ? "bolder" : "normal",
-            }}
-          >
-            MSC
-          </div>
-          <div
-            onMouseEnter={() => setAcademicData({ selector: "bachelor" })}
-            style={{
-              fontWeight:
-                academicData.selector === "bachelor" ? "bolder" : "normal",
-            }}
-          >
-            Bachelor
-          </div>
-        </div>
+      <div style={{}}>
         <div
           style={{
             width: "100vh",
@@ -88,7 +42,8 @@ const Academic = () => {
             marginLeft: "4vh",
           }}
         >
-          {academicData.selector === "master" ? (
+          <div style={{ display: "flex", flexDirection: "row" }}>
+            <img src={tspLogo} className="Academic-logo-tsp" alt="logo" />
             <p style={{ margin: "0" }}>
               {" "}
               2017-2019 -{" "}
@@ -102,7 +57,11 @@ const Academic = () => {
                 Virtualization
               </code>
             </p>
-          ) : (
+          </div>
+          <br />
+          <br />
+          <div style={{ display: "flex", flexDirection: "row" }}>
+            <img src={usbLogo} className="Academic-logo-usb" alt="logo" />
             <p style={{ margin: "0" }}>
               {" "}
               2012-2019 -{" "}
@@ -116,10 +75,10 @@ const Academic = () => {
                 Electronic circuits
               </code>
             </p>
-          )}
+          </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
