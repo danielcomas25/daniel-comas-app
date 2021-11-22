@@ -1,14 +1,12 @@
 import React, { useState } from "react";
-
-import { Link } from "react-router-dom";
 import usbLogo from "./../../images/usb-logo.gif";
 import tspLogo from "./../../images/tsp-logo.jpeg";
-
-interface Selector {
-  selector: String;
-}
+import { Icon } from "@iconify/react";
 
 const Academic = () => {
+  const [onMasterDiploma, setOnMasterDiploma] = useState<boolean>(false);
+  const [onBachelorDiploma, setOnBachelorDiploma] = useState<boolean>(false);
+
   return (
     <div
       id={"academic"}
@@ -43,7 +41,18 @@ const Academic = () => {
           }}
         >
           <div style={{ display: "flex", flexDirection: "row" }}>
-            <img src={tspLogo} className="Academic-logo-tsp" alt="logo" />
+            <a
+              href="https://www.telecom-sudparis.eu/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              <img
+                src={tspLogo}
+                className="Academic-logo-tsp"
+                alt="logo"
+              />{" "}
+            </a>
             <p style={{ margin: "0" }}>
               {" "}
               2017-2019 -{" "}
@@ -55,13 +64,39 @@ const Academic = () => {
                 Telecom Sud Paris in Paris, France <br />
                 Related Courses: Middleware for Distributed Applications,
                 Virtualization
-              </code>
+              </code>{" "}
+              <br /> <br />
+              <a
+                onMouseOver={() => setOnMasterDiploma(true)}
+                onMouseOut={() => setOnMasterDiploma(false)}
+                href="https://drive.google.com/file/d/1wB8uH6bYg357e7PhcndtGg9inqDIh2hE/view"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  textDecoration: "none",
+                  color: onMasterDiploma ? "#ffff" : "#c2c2d6",
+                }}
+              >
+                {" "}
+                <Icon
+                  icon="fa-solid:download"
+                  color={onMasterDiploma ? "#ffff" : "#c2c2d6"}
+                  width="20"
+                />
+                <code> Master Diploma </code>
+              </a>
             </p>
           </div>
           <br />
           <br />
           <div style={{ display: "flex", flexDirection: "row" }}>
-            <img src={usbLogo} className="Academic-logo-usb" alt="logo" />
+            <a
+              href="http://www.usb.ve/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={usbLogo} className="Academic-logo-usb" alt="logo" />{" "}
+            </a>
             <p style={{ margin: "0" }}>
               {" "}
               2012-2019 -{" "}
@@ -73,7 +108,27 @@ const Academic = () => {
                 Universidad Simon Bolivar in Caracas, Venezuela <br />
                 Related Courses: Control Systems, Computer Architecture,
                 Electronic circuits
-              </code>
+              </code>{" "}
+              <br /> <br />
+              <a
+                onMouseOver={() => setOnBachelorDiploma(true)}
+                onMouseOut={() => setOnBachelorDiploma(false)}
+                href="https://drive.google.com/file/d/1uW3eqhaJdyIuBl7HX4f7Xp1HIIOESfJY/view"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  textDecoration: "none",
+                  color: onBachelorDiploma ? "#ffff" : "#c2c2d6",
+                }}
+              >
+                {" "}
+                <Icon
+                  icon="fa-solid:download"
+                  color={onBachelorDiploma ? "#ffff" : "#c2c2d6"}
+                  width="20"
+                />
+                <code> Engineering Diploma </code>
+              </a>
             </p>
           </div>
         </div>

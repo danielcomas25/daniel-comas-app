@@ -61,7 +61,7 @@ const AboutMe = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Icon icon="mdi:language-ruby-on-rails" width="70" />
+            <Icon icon="mdi:language-ruby-on-rails" width="70" color="white" />
           </a>
           <code style={{ fontSize: "1.5vh" }}> Ruby on Rails </code>
         </div>

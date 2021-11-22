@@ -2,24 +2,48 @@ import React, { useState } from "react";
 import { send } from "emailjs-com";
 import { Icon } from "@iconify/react";
 import logo from "./../../logo.svg";
+import Modal from "react-modal";
+
+const modalStyle = {
+  content: {
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    marginRight: "-50%",
+    transform: "translate(-50%, -50%)",
+  },
+};
 
 const ContactMe = () => {
   const [iconOn, setIconOn] = useState({ on: "none" });
+  const [emailMessage, setEmailMessage] = useState(
+    "Successfully sent your email."
+  );
+  const [modalOpen, setModalOpen] = useState<boolean>(false);
   const [toSend, setToSend] = useState({
     from_name: "",
     to_name: "danieljcomas@gmail.com",
     message: "",
     reply_to: "",
   });
+  const closeModal = () => {
+    setModalOpen(false);
+    setEmailMessage("");
+  };
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setEmailMessage("Successfully sent your email.");
     // send("service_0dbx922", "template_5cw3v1r", toSend, 'user_K9AjBuy0GgiXyBtz3BMX7')
     //   .then((response) => {
     //     console.log("SUCCESS!", response.status, response.text);
+    //     setEmailMessage("Successfully sent your email.")
     //   })
     //   .catch((err) => {
     //     console.log("FAILED...", err);
+    //     setEmailMessage("Upss.. Something went wrong, please send email to danieljcomas@gmail.com")
     //   });
+    setModalOpen(true);
   };
 
   return (
@@ -33,6 +57,27 @@ const ContactMe = () => {
         alignItems: "center",
       }}
     >
+      <Modal
+        isOpen={modalOpen}
+        onRequestClose={closeModal}
+        contentLabel="Example Modal"
+        style={modalStyle}
+      >
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+          }}
+        >
+          <h1>
+            <code>{emailMessage}</code>
+          </h1>
+          <button onClick={closeModal} style={{ fontSize: "4vh" }}>
+            Close
+          </button>
+        </div>
+      </Modal>
       <div
         style={{
           height: "100vh",
@@ -145,7 +190,7 @@ const ContactMe = () => {
                 icon="uil:linkedin"
                 width="75"
                 height="75"
-                color={iconOn.on === "linkedin" ? "#c2c2d6" : "#ffff"}
+                color={iconOn.on === "linkedin" ? "#ffff" : "#c2c2d6"}
               />
             </a>
           </span>
@@ -162,7 +207,7 @@ const ContactMe = () => {
                 icon="akar-icons:github-fill"
                 width="75"
                 height="75"
-                color={iconOn.on === "github" ? "#c2c2d6" : "#ffff"}
+                color={iconOn.on === "github" ? "#ffff" : "#c2c2d6"}
               />
             </a>
           </span>

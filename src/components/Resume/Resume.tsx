@@ -54,7 +54,7 @@ const Resume = () => {
                 icon="uil:linkedin"
                 width="75"
                 height="75"
-                color={iconOn.on === "linkedin" ? "#c2c2d6" : "#ffff"}
+                color={iconOn.on === "linkedin" ? "#ffff" : "#c2c2d6"}
               />
             </a>
           </span>
@@ -71,7 +71,7 @@ const Resume = () => {
                 icon="akar-icons:github-fill"
                 width="75"
                 height="75"
-                color={iconOn.on === "github" ? "#c2c2d6" : "#ffff"}
+                color={iconOn.on === "github" ? "#ffff" : "#c2c2d6"}
               />
             </a>
           </span>
