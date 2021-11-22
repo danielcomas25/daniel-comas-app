@@ -42,7 +42,10 @@ const Header = () => {
         <div
           style={{ marginRight: "2vh", fontSize: "2vh", fontWeight: "bold" }}
         >
-          <code> Contact me </code>
+          <HashLink smooth to="/daniel-comas-app#contactme">
+            {" "}
+            <code> Contact me </code>
+          </HashLink>
         </div>
       </div>
     </div>
