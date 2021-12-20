@@ -165,7 +165,7 @@ const ContactMe = () => {
         <h3>
           {" "}
           <code>
-            Made with
+            Build with
             <a
               href="https://reactjs.org/"
               target="_blank"

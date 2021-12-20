@@ -34,7 +34,7 @@ const AboutMe = () => {
         {" "}
         Hello, my name is Daniel Comas and I like to build software in general
         for living. My interest in software started when I was studying
-        electronic engineeering back in Venezuela. By them, I had courses
+        electronic engineeering back in Venezuela. By then, I had courses
         related to Algorithms and Computer Architecture. <br /> <br />
         Afterwards, I decided to do my master in Computer Science in Telecom
         SudParis where I learn many things about development and software
